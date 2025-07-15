@@ -20,12 +20,13 @@
   },
   "updateContentCommand": {
     "cinstall": "npm install",
-    "vinstall": "cd origin && npm install"
+    "vinstall": "cd ./origin && npm install"
   },
   "postAttachCommand": {
     "inform": "bash helpers/welcome.sh",
     "build": "npm run start",
-    "origin": "cd origin && npm run build && npm run preview"
+    "origin": "cd ./origin && npm run serve",
+    "prep": "cd ./origin && npm run static"
   },
   "waitFor": "updateContentCommand",
   "customizations": {

@@ -6,14 +6,14 @@ description = "A project for learning about edge computing."
 language = "javascript"
 manifest_version = 3
 name = "Hello Compute"
+service_id = "i2sxxldQ3dLBnfY1L6lnf5"
 
 [local_server]
 
   [local_server.backends]
 
     [local_server.backends.website]
-      override_host = "glitchdotcom.github.io"
-      url = "https://glitchdotcom.github.io/"
+      url = "http://localhost:4173/"
 
 [scripts]
   build = "npm run build"
@@ -24,4 +24,4 @@ name = "Hello Compute"
   [setup.backends]
 
     [setup.backends.website]
-      address = "glitchdotcom.github.io"
+      address = "SueSmith-hello-compute-origin.edgecompute.app"

@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build --watch",
+    "preview": "vite preview",
+    "serve": "vite build --watch & vite preview",
+    "static": "npx --yes @fastly/compute-js-static-publish@latest --root-dir=dist --output=_app --kv-store-name=$GITHUB_USER-$RepositoryName-origin-content --name=$GITHUB_USER-$RepositoryName-origin"
   },
   "devDependencies": {
     "vite": "^6.2.2"
